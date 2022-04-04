@@ -1,0 +1,558 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------Menu---------------*/
+.menuBody{    
+    width: 100%;
+    height: 180%;
+    position: absolute;
+    top: 0%;
+    display: grid;
+    grid-template-columns: 280px auto;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fondoMenu{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.menuContainer{
+    width: 240px;
+    background-color: white;
+    padding: 24px 20px;
+}
+
+.perfileMenu{
+    height: 40px;
+    padding: 8px 12px;
+
+    display: grid;
+    grid-template-columns: 40px auto 16px;
+}
+
+.photoMenu{
+    width: 40px;
+}
+.photoMenu>img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.namePerfile{
+    position: relative;
+    padding: 5px 16px 0 8px;
+    font-size: 15px;
+}
+
+.namePerfile p{
+    position: absolute;
+    font-size: 12px;
+    color: gray;
+    bottom: 0%;
+}
+
+
+.infoPerfile i{
+    font-size: 10px; 
+}
+
+/*opciones900pxs*/
+
+
+.newButtonMenu{
+
+    padding: 16px 12px 20px 12px;
+    height: 40px;
+    width: auto;
+
+    transition: all 5ms ease;
+}
+
+.newButtonMenu button{ 
+
+    height: 100%;
+    width: 100%;
+    background-color: #8b3dff;
+    color: white; 
+}
+
+.opcionesMenu{
+    padding: 0%;
+    margin: 0%;
+    font-size: 15px;
+}
+
+.opcionesMenu div{
+    display: grid;
+    grid-template-columns: auto 20px;
+    align-items: center;
+
+    height: 40px;
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+
+
+.opcionesMenu i{
+    font-size: 10px;
+}
+
+/*--------------Pagina-------------*/
+
+.pagina{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+/*-------Navbar------*/
+.navbar{
+    width: 100%;
+    display: flex;
+    height: 56px;
+    padding: 8px 32px 8px 0;
+    list-style: none;
+    position: relative;
+}
+
+.navbar>ul{
+    display: flex;
+    list-style: none;
+    margin: 18px 8px 18px 8px;
+    padding:0;
+}
+
+
+/*logo*/
+.logo{
+    padding: 10px 0 10px 0;
+}
+.logo img{
+    max-height: 100%;
+}
+
+
+/*Options*/
+.option >li{
+    margin-right: 32px;
+    font-size: 15px;
+}
+
+
+/*icons*/
+
+.icon >i{
+    font-size: 20px;
+}
+
+.menuButton{
+   background-color: white; 
+   cursor: pointer;
+}
+#menu{
+    
+    padding: 18px;
+}
+
+#question{
+    position: absolute;
+    top: 26px;
+    right: 276px;
+}
+#setting{
+    position: absolute;
+    top: 26px;
+    right: 240px;
+}
+
+
+/*Button*/
+
+button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0;
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inicio{
+    width: 62px;
+    margin: 8px 16px 8px 16px;
+}
+
+.new{
+    position: absolute;
+    right: 88px;
+    top: 16px;
+
+
+    width: 132px;
+    background-color: #8b3dff;
+    color: white; 
+}
+
+
+
+/*Perfile*/
+.perfile{
+    position: absolute;
+    right: 32px;
+    top: 16px;
+    width: 40px;
+}
+.perfile>img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+
+/*CONTAIN*/
+.containCanva{
+    padding: 32px;
+}
+
+/*-------------Letter desing------------*/
+
+.letterDesing{
+    display: grid;
+    grid-template-rows: 62px 62px 124px;
+
+    height: 248px;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    list-style: none;
+
+    border-radius: 8px;
+    background: rgb(4,191,205);
+    background: linear-gradient(170deg, rgba(4,191,205,1) 10%, rgba(35,111,233,1) 44%, rgba(125,58,231,1) 89%);
+}
+
+/*Primera fila*/
+.enunciado{
+    position: relative;
+}
+
+.textLetter{
+    position: absolute;
+    color: white;
+    font-size:24px;
+    font-family: 'BIZ UDPMincho', serif;
+    font-weight: bold;
+
+    left: 50%;
+    bottom: 0;
+    margin-left: -130px; 
+}
+
+.size{
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    height: 40px;
+    padding: 2px 8px 2px 8px;
+    background-color: rgba(236, 236, 236, 0.123);
+    color: rgba(255, 255, 255, 0.753);
+    font-weight:600; 
+}
+.size p{
+    margin-top: 10px;
+}
+p{
+    margin: 0;
+}
+#crop i{
+    visibility:visible;
+    opacity: 0;
+    font-size: 19px;
+}
+
+
+/*Segunda fila*/
+.search{
+    margin: 22px 16px 0 16px;
+    padding: 0 16px 0 8px;
+    background-color: white;
+    border-radius: 3px;
+    height: 40px;
+
+    display: grid;
+    grid-template-columns: 36px auto 30px 30px;
+    place-items: center;
+}
+
+#sheactInput{
+    width: 100%;
+    border: 0;
+    font-size: 15px; 
+    color: rgb(158, 158, 158);
+}
+
+.search i{
+    font-size: 20px;
+}
+
+.searchIcon i{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.photo i{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cloud i{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/*Tercera fila*/
+.optionLetter{
+    margin:28px 16px 0 16px;
+
+    display: grid;
+    display: flex;
+    place-content: center;
+}
+
+.iconOption{
+    font-size: 12px;
+    font-weight:600;
+    color: white;
+    height: 76px;
+    width: 88px;
+}
+
+.iconOption i{
+    width: 48px;
+    height: 48px;
+    font-size: 25px;
+    margin: 0 20px 16px 20px;
+
+    display: grid;
+    place-items: center;
+
+    background-color: rgba(236, 236, 236, 0.123);
+    border-radius: 50%;
+    border: rgba(236, 236, 236, 0.144) .3px solid;
+
+    cursor: pointer;
+}
+
+.iconOption p{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*---------Contain-------------*/
+.optionLetterContain{
+    position: relative;
+    padding: 16px;
+}
+
+.optionLetterContain h3{
+    margin: 0;
+    padding-bottom: 8px;
+    width: auto;
+    height: 40px;
+
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+
+.carrusel{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    font-size: 12px;
+    font-weight:600;
+    width: 100%;
+}
+.carrusel li{
+    padding-right: 24px;
+    width: 100%;
+}
+
+.carrusel li img{
+    max-width: 100%;
+    border-radius: 15px;
+    padding-bottom: 8px;
+}
+
+.diseñosPropios{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.diseñosPropios li img{
+    background-color: #EBECF0;
+    border-radius: 10px;
+    padding: 16px;
+    max-width: 84%;
+    max-height: 100%;
+}
+
+.diseñosPropios li h2{
+
+    font-size: 16px;
+}
+
+.diseñosPropios li p{
+    font-size: 12px;
+    color: gray;
+    height: 20px;
+}
+
+#paraTiContain{
+    position: absolute;
+}
+
+#presentacionesContain{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#otherContain{
+    visibility: hidden;
+    opacity: 0; 
+    list-style: none;   
+}
+
+#otherContain li{
+    width: 100%;
+    background-color: #EBECF0;
+    border-radius: 15px;
+}
+
+#otherContain li img{
+    margin: 3%;
+    border-radius: 15px;
+    max-width: 94%;
+    max-height: 100%;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer;
+}
+
+img{
+    cursor: pointer;
+}
+
+
+/*Responsive*/
+@media(max-width: 1200px){
+    #otherBorrar{
+        display: none;
+    }
+}
+
+
+@media (max-width: 900px){
+    .option li{
+        display: none;
+    }
+    .inicio{
+        display: none;
+    }
+    .sizeText{
+        display: none;
+    }
+    #crop i{
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+@media (max-width: 750px){
+    .enunciado{
+        display: none;
+    }
+    .containCanva{
+        padding: 0;
+    }
+    .letterDesing{
+        display: grid;
+        grid-template-rows: 62px 124px;
+    
+        height: 200px;   
+        list-style: none;
+    
+        border-radius: 0;
+    }
+
+    .photo{
+        display: none;
+    }
+    
+    .cloud{
+        display: none;
+    }
+
+    .search{
+        display: grid;
+        grid-template-columns: 36px auto;
+    }
+
+
+    .optionLetterContain{
+        padding: 8px;
+        top: -15px;
+        background-color: white;
+        border-top-left-radius: 4%;    
+        border-top-right-radius: 4%;    
+    }
+    
+    .optionLetterContain h1{
+        font-size: 22px;
+
+    }
+     
+    
+    .diseñosPropios{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .diseñosPropios li h2{
+    
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px){
+    #presentaciones{
+        display: none;
+    }
+    #other{
+        display: none;
+    }
+}
