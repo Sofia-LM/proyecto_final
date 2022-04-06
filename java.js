@@ -1,4 +1,3 @@
-
 (()=>{
     let menuButton = document.getElementById("menuButton");
     let menuBody = document.getElementById("menuBody");
@@ -12,6 +11,18 @@
         menuBody.style.visibility='hidden';
         menuBody.style.opacity='0';
     },false)    
+
+
+
+    let menuFuncional = document.getElementById("menuFuncional");
+    menuFuncional.addEventListener('click',()=>{
+        menuBody.style.visibility='visible';
+        menuBody.style.opacity='1';
+    },false)
+ 
+
+
+
 
 
     const paraTi = document.getElementById("paraTi");
