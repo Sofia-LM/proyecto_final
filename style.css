@@ -2,6 +2,7 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 /*-----------------Menu---------------*/
@@ -467,6 +468,59 @@ img{
 }
 
 
+/*----------Responsive small------------*/
+
+.masSmall{
+    background-color: #8b3dff;
+    font-size: 17px;
+    color: white; 
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+
+    position: fixed;
+    right: 16px;
+    bottom: 72px;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbarSmall{
+    position: fixed;
+    color: rgb(116, 115, 115);
+    list-style: none;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 48px;
+
+    border-top: rgb(252, 252, 252) 8px solid;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.navbarSmall i{
+    height: 24px;
+    font-size: 18px;
+
+    display: grid;
+    place-items: center;
+}
+
+.navbarSmall p{
+    font-size: 11px;
+    height: 16px;
+    margin-top: 3px;
+}
+
+
 /*Responsive*/
 @media(max-width: 1200px){
     #otherBorrar{
@@ -546,6 +600,21 @@ img{
         font-size: 14px;
     }
 
+
+    .masSmall{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbarSmall{
+        visibility: visible;
+        opacity: 1;
+    }    
+
+    .navbar{
+        display: none;
+    }
+
 }
 
 @media (max-width: 600px){
@@ -555,4 +624,6 @@ img{
     #other{
         display: none;
     }
+
+
 }
